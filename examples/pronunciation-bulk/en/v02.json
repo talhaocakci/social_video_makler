@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-v02",
+  "module_code": "EN-V02",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-v02-01-name",
+      "pattern": "a–e",
+      "phonetic": "/eɪ/",
+      "word": "name",
+      "word_phonetic": "/neɪm/",
+      "focus": "a"
+    },
+    {
+      "card_id": "en-v02-02-late",
+      "pattern": "a–e",
+      "phonetic": "/eɪ/",
+      "word": "late",
+      "word_phonetic": "/leɪt/",
+      "focus": "a"
+    },
+    {
+      "card_id": "en-v02-03-time",
+      "pattern": "i–e",
+      "phonetic": "/aɪ/",
+      "word": "time",
+      "word_phonetic": "/taɪm/",
+      "focus": "i"
+    },
+    {
+      "card_id": "en-v02-04-five",
+      "pattern": "i–e",
+      "phonetic": "/aɪ/",
+      "word": "five",
+      "word_phonetic": "/faɪv/",
+      "focus": "i"
+    },
+    {
+      "card_id": "en-v02-05-home",
+      "pattern": "o–e",
+      "phonetic": "/oʊ/",
+      "word": "home",
+      "word_phonetic": "/hoʊm/",
+      "focus": "o"
+    },
+    {
+      "card_id": "en-v02-06-rose",
+      "pattern": "o–e",
+      "phonetic": "/oʊ/",
+      "word": "rose",
+      "word_phonetic": "/ɹoʊz/",
+      "focus": "o"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

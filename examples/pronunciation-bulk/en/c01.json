@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-c01",
+  "module_code": "EN-C01",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-c01-01-bad",
+      "pattern": "b",
+      "phonetic": "/b/",
+      "word": "bad",
+      "word_phonetic": "/bæd/",
+      "focus": "b"
+    },
+    {
+      "card_id": "en-c01-02-bed",
+      "pattern": "d",
+      "phonetic": "/d/",
+      "word": "bed",
+      "word_phonetic": "/bɛd/",
+      "focus": "d"
+    },
+    {
+      "card_id": "en-c01-03-fish",
+      "pattern": "f / ff",
+      "phonetic": "/f/",
+      "word": "fish",
+      "word_phonetic": "/fɪʃ/",
+      "focus": "f"
+    },
+    {
+      "card_id": "en-c01-04-off",
+      "pattern": "f / ff",
+      "phonetic": "/f/",
+      "word": "off",
+      "word_phonetic": "/ɔf/",
+      "focus": "ff"
+    },
+    {
+      "card_id": "en-c01-05-hat",
+      "pattern": "h",
+      "phonetic": "/h/",
+      "word": "hat",
+      "word_phonetic": "/hæt/",
+      "focus": "h"
+    },
+    {
+      "card_id": "en-c01-06-behind",
+      "pattern": "h",
+      "phonetic": "/h/",
+      "word": "behind",
+      "word_phonetic": "/bɪˈhaɪnd/",
+      "focus": "h"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

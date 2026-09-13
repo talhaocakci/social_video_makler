@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-de-a1-ei-ie",
+  "version": "000001",
+  "target_language": "de",
+  "locale": "de-DE",
+  "variety": "Standarddeutsch",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "ei-eis",
+      "pattern": "ei",
+      "phonetic": "/aɪ̯/",
+      "word": "Eis",
+      "word_phonetic": "/aɪ̯s/",
+      "focus": "Ei"
+    },
+    {
+      "card_id": "ei-mein",
+      "pattern": "ei",
+      "phonetic": "/aɪ̯/",
+      "word": "mein",
+      "word_phonetic": "/maɪ̯n/",
+      "focus": "ei"
+    },
+    {
+      "card_id": "ie-biene",
+      "pattern": "ie",
+      "phonetic": "/iː/",
+      "word": "Biene",
+      "word_phonetic": "/ˈbiːnə/",
+      "focus": "ie",
+      "artwork": {
+        "src": "/generated/pronunciation/bee-biene.png",
+        "provenance": "generated",
+        "description": "Original transparent bee illustration generated for this pilot",
+        "sha256": "2c7d2b517be3d1afb54b911ce4f19bd8cb5f9457e929b1f674f0fb755a34766a"
+      }
+    },
+    {
+      "card_id": "ie-liebe",
+      "pattern": "ie",
+      "phonetic": "/iː/",
+      "word": "Liebe",
+      "word_phonetic": "/ˈliːbə/",
+      "focus": "ie"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Goethe-Institut London",
+      "title": "Deutsch mit Karla & Kai, Volume 1",
+      "url": "https://www.goethe.de/prj/dlp/dlapi/v1/index.cfm?endpoint=%2Ftlm%2Fdownload&file_ID=8752&tlm_ID=2776",
+      "supports": ["ei-/aɪ̯/", "ie-/iː/", "example-word families"]
+    },
+    {
+      "publisher": "Leibniz-Institut für Deutsche Sprache",
+      "title": "Amtliches Regelwerk: Vokale",
+      "url": "https://grammis.ids-mannheim.de/rechtschreibung/6145",
+      "supports": ["ei-/aɪ̯/", "ie-/iː/", "standard pronunciation"]
+    }
+  ],
+  "release_state": "local_preview_only"
+}

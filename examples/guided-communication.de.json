@@ -1,0 +1,44 @@
+{
+  "asset_id": "demo-guided-bakery-de",
+  "version": "000001",
+  "status": "DRAFT",
+  "target_language": "de",
+  "cefr": "A2",
+  "title": "Beim Bäcker bestellen",
+  "summary": "Order bread rolls politely and finish the purchase.",
+  "category": {
+    "id": "food-and-drinks",
+    "title": "Food & Drinks"
+  },
+  "learning_chain": {
+    "asset_id": "demo-order-at-a-bakery-de",
+    "version": "000001",
+    "title": "Order at a Bakery"
+  },
+  "speaker_labels": {
+    "side_a": "Verkäuferin",
+    "side_b": "Lernende Person"
+  },
+  "dialogue_turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_side": "side_a",
+      "text": "Guten Morgen! Was darf es sein?"
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_side": "side_b",
+      "text": "Ich hätte gern zwei Brötchen, bitte."
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_side": "side_a",
+      "text": "Möchten Sie noch etwas?"
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_side": "side_b",
+      "text": "Nein, danke. Das ist alles."
+    }
+  ]
+}

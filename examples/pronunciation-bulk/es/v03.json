@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-es-a1-v03",
+  "module_code": "ES-V03",
+  "version": "000001",
+  "target_language": "es",
+  "locale": "es-419",
+  "variety": "español internacional, seseo y yeísmo",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "es-v03-01-aire",
+      "pattern": "ai / ay",
+      "phonetic": "/ai̯/",
+      "word": "aire",
+      "word_phonetic": "/ˈai̯ɾe/",
+      "focus": "ai"
+    },
+    {
+      "card_id": "es-v03-02-hay",
+      "pattern": "ai / ay",
+      "phonetic": "/ai̯/",
+      "word": "hay",
+      "word_phonetic": "/ai̯/",
+      "focus": "ay"
+    },
+    {
+      "card_id": "es-v03-03-peine",
+      "pattern": "ei / ey",
+      "phonetic": "/ei̯/",
+      "word": "peine",
+      "word_phonetic": "/ˈpei̯ne/",
+      "focus": "ei"
+    },
+    {
+      "card_id": "es-v03-04-rey",
+      "pattern": "ei / ey",
+      "phonetic": "/ei̯/",
+      "word": "rey",
+      "word_phonetic": "/rei̯/",
+      "focus": "ey"
+    },
+    {
+      "card_id": "es-v03-05-boina",
+      "pattern": "oi / oy",
+      "phonetic": "/oi̯/",
+      "word": "boina",
+      "word_phonetic": "/ˈboi̯na/",
+      "focus": "oi"
+    },
+    {
+      "card_id": "es-v03-06-hoy",
+      "pattern": "oi / oy",
+      "phonetic": "/oi̯/",
+      "word": "hoy",
+      "word_phonetic": "/oi̯/",
+      "focus": "oy"
+    },
+    {
+      "card_id": "es-v03-07-causa",
+      "pattern": "au",
+      "phonetic": "/au̯/",
+      "word": "causa",
+      "word_phonetic": "/ˈkau̯sa/",
+      "focus": "au"
+    },
+    {
+      "card_id": "es-v03-08-europa",
+      "pattern": "eu",
+      "phonetic": "/eu̯/",
+      "word": "Europa",
+      "word_phonetic": "/eu̯ˈɾopa/",
+      "focus": "Eu"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Instituto Cervantes",
+      "title": "Plan curricular: Pronunciación y prosodia, inventario A1-A2",
+      "url": "https://cvc.cervantes.es/ensenanza/biblioteca_Ele/plan_curricular/niveles/03_pronunciacion_inventario_a1-a2.htm",
+      "supports": [
+        "Spanish phoneme inventory",
+        "sound-spelling relationships",
+        "connected speech"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española and ASALE",
+      "title": "Diccionario panhispánico de dudas: u",
+      "url": "https://www.rae.es/dpd/u",
+      "supports": [
+        "silent u in que/qui and gue/gui",
+        "pronounced ü in güe/güi"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española",
+      "title": "Ortografía básica de la lengua española",
+      "url": "https://www.rae.es/diccionario-estudiante/docs/ortografia.pdf",
+      "supports": [
+        "orthographic rules",
+        "written stress"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

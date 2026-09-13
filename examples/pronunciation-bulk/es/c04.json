@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-es-a1-c04",
+  "module_code": "ES-C04",
+  "version": "000001",
+  "target_language": "es",
+  "locale": "es-419",
+  "variety": "español internacional, seseo y yeísmo",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "es-c04-01-foto",
+      "pattern": "f",
+      "phonetic": "/f/",
+      "word": "foto",
+      "word_phonetic": "/ˈfoto/",
+      "focus": "f"
+    },
+    {
+      "card_id": "es-c04-02-cafe",
+      "pattern": "f",
+      "phonetic": "/f/",
+      "word": "café",
+      "word_phonetic": "/kaˈfe/",
+      "focus": "f"
+    },
+    {
+      "card_id": "es-c04-03-mano",
+      "pattern": "m",
+      "phonetic": "/m/",
+      "word": "mano",
+      "word_phonetic": "/ˈmano/",
+      "focus": "m"
+    },
+    {
+      "card_id": "es-c04-04-cama",
+      "pattern": "m",
+      "phonetic": "/m/",
+      "word": "cama",
+      "word_phonetic": "/ˈkama/",
+      "focus": "m"
+    },
+    {
+      "card_id": "es-c04-05-nube",
+      "pattern": "n",
+      "phonetic": "/n/",
+      "word": "nube",
+      "word_phonetic": "/ˈnube/",
+      "focus": "n"
+    },
+    {
+      "card_id": "es-c04-06-luna",
+      "pattern": "n",
+      "phonetic": "/n/",
+      "word": "luna",
+      "word_phonetic": "/ˈluna/",
+      "focus": "n"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Instituto Cervantes",
+      "title": "Plan curricular: Pronunciación y prosodia, inventario A1-A2",
+      "url": "https://cvc.cervantes.es/ensenanza/biblioteca_Ele/plan_curricular/niveles/03_pronunciacion_inventario_a1-a2.htm",
+      "supports": [
+        "Spanish phoneme inventory",
+        "sound-spelling relationships",
+        "connected speech"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española and ASALE",
+      "title": "Diccionario panhispánico de dudas: u",
+      "url": "https://www.rae.es/dpd/u",
+      "supports": [
+        "silent u in que/qui and gue/gui",
+        "pronounced ü in güe/güi"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española",
+      "title": "Ortografía básica de la lengua española",
+      "url": "https://www.rae.es/diccionario-estudiante/docs/ortografia.pdf",
+      "supports": [
+        "orthographic rules",
+        "written stress"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

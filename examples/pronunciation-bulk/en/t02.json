@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-t02",
+  "module_code": "EN-T02",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-t02-01-team",
+      "pattern": "ea",
+      "phonetic": "/iː/",
+      "word": "team",
+      "word_phonetic": "/tiːm/",
+      "focus": "ea"
+    },
+    {
+      "card_id": "en-t02-02-clean",
+      "pattern": "ea",
+      "phonetic": "/iː/",
+      "word": "clean",
+      "word_phonetic": "/kliːn/",
+      "focus": "ea"
+    },
+    {
+      "card_id": "en-t02-03-head",
+      "pattern": "ea",
+      "phonetic": "/ɛ/",
+      "word": "head",
+      "word_phonetic": "/hɛd/",
+      "focus": "ea"
+    },
+    {
+      "card_id": "en-t02-04-bread",
+      "pattern": "ea",
+      "phonetic": "/ɛ/",
+      "word": "bread",
+      "word_phonetic": "/bɹɛd/",
+      "focus": "ea"
+    },
+    {
+      "card_id": "en-t02-05-great",
+      "pattern": "ea",
+      "phonetic": "/eɪ/",
+      "word": "great",
+      "word_phonetic": "/ɡɹeɪt/",
+      "focus": "ea"
+    },
+    {
+      "card_id": "en-t02-06-break",
+      "pattern": "ea",
+      "phonetic": "/eɪ/",
+      "word": "break",
+      "word_phonetic": "/bɹeɪk/",
+      "focus": "ea"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

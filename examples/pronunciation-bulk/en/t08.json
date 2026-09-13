@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-t08",
+  "module_code": "EN-T08",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-t08-01-out",
+      "pattern": "ou",
+      "phonetic": "/aʊ/",
+      "word": "out",
+      "word_phonetic": "/aʊt/",
+      "focus": "ou"
+    },
+    {
+      "card_id": "en-t08-02-soul",
+      "pattern": "ou",
+      "phonetic": "/oʊ/",
+      "word": "soul",
+      "word_phonetic": "/soʊl/",
+      "focus": "ou"
+    },
+    {
+      "card_id": "en-t08-03-young",
+      "pattern": "ou",
+      "phonetic": "/ʌ/",
+      "word": "young",
+      "word_phonetic": "/jʌŋ/",
+      "focus": "ou"
+    },
+    {
+      "card_id": "en-t08-04-soup",
+      "pattern": "ou",
+      "phonetic": "/uː/",
+      "word": "soup",
+      "word_phonetic": "/suːp/",
+      "focus": "ou"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

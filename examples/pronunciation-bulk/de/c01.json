@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-de-a1-c01",
+  "module_code": "DE-C01",
+  "version": "000001",
+  "target_language": "de",
+  "locale": "de-DE",
+  "variety": "Standarddeutsch",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "de-c01-01-schule",
+      "pattern": "sch",
+      "phonetic": "/ʃ/",
+      "word": "Schule",
+      "word_phonetic": "/ˈʃuːlə/",
+      "focus": "Sch"
+    },
+    {
+      "card_id": "de-c01-02-tisch",
+      "pattern": "sch",
+      "phonetic": "/ʃ/",
+      "word": "Tisch",
+      "word_phonetic": "/ˈtɪʃ/",
+      "focus": "sch"
+    },
+    {
+      "card_id": "de-c01-03-sport",
+      "pattern": "sp-",
+      "phonetic": "/ʃp/",
+      "word": "Sport",
+      "word_phonetic": "/ˈʃpɔʁt/",
+      "focus": "Sp"
+    },
+    {
+      "card_id": "de-c01-04-spiel",
+      "pattern": "sp-",
+      "phonetic": "/ʃp/",
+      "word": "Spiel",
+      "word_phonetic": "/ˈʃpiːl/",
+      "focus": "Sp"
+    },
+    {
+      "card_id": "de-c01-05-stadt",
+      "pattern": "st-",
+      "phonetic": "/ʃt/",
+      "word": "Stadt",
+      "word_phonetic": "/ˈʃtat/",
+      "focus": "St"
+    },
+    {
+      "card_id": "de-c01-06-stehen",
+      "pattern": "st-",
+      "phonetic": "/ʃt/",
+      "word": "stehen",
+      "word_phonetic": "/ˈʃteːən/",
+      "focus": "st"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Leibniz-Institut für Deutsche Sprache",
+      "title": "Amtliches Regelwerk: Vokale",
+      "url": "https://grammis.ids-mannheim.de/rechtschreibung/6145",
+      "supports": [
+        "German vowel spelling",
+        "vowel combinations"
+      ]
+    },
+    {
+      "publisher": "Leibniz-Institut für Deutsche Sprache",
+      "title": "Das ie",
+      "url": "https://grammis.ids-mannheim.de/progr@mm/6803",
+      "supports": [
+        "ie spelling",
+        "long i pronunciation"
+      ]
+    },
+    {
+      "publisher": "Goethe-Institut London",
+      "title": "Deutsch mit Karla & Kai, Volume 1",
+      "url": "https://www.goethe.de/prj/dlp/dlapi/v1/index.cfm?endpoint=%2Ftlm%2Fdownload&file_ID=8752&tlm_ID=2776",
+      "supports": [
+        "learner progression",
+        "example-word families"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

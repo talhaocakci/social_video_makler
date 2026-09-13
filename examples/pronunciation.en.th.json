@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-th",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "th-thin",
+      "pattern": "th",
+      "phonetic": "/θ/",
+      "word": "thin",
+      "word_phonetic": "/θɪn/",
+      "focus": "th"
+    },
+    {
+      "card_id": "th-three",
+      "pattern": "th",
+      "phonetic": "/θ/",
+      "word": "three",
+      "word_phonetic": "/θriː/",
+      "focus": "th"
+    },
+    {
+      "card_id": "th-this",
+      "pattern": "th",
+      "phonetic": "/ð/",
+      "word": "this",
+      "word_phonetic": "/ðɪs/",
+      "focus": "th"
+    },
+    {
+      "card_id": "th-mother",
+      "pattern": "th",
+      "phonetic": "/ð/",
+      "word": "mother",
+      "word_phonetic": "/ˈmʌðər/",
+      "focus": "th"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": ["th-/θ/", "th-/ð/", "grapheme-phoneme contrast"]
+    }
+  ],
+  "release_state": "local_preview_only"
+}

@@ -1,0 +1,8 @@
+{
+  "region": "eu-central-1",
+  "bucket": "getfluentfast-media",
+  "table": "language-prod-social-videos",
+  "role_arn": "arn:aws:iam::348467063208:role/TerraformExecutionRole",
+  "id_length": 10,
+  "s3_prefix": "social-videos"
+}

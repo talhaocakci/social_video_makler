@@ -1,118 +1,48 @@
-# OverlayMotion
+# GFF Social Video Factory
 
-🎬 Video templates that wear your brand. You describe the edit, your coding
-agent does it, and a finished video comes out the other side.
+Build preview-ready social videos from exact GetFluentFast content versions.
+The MVP accepts Guided Communication JSON, compiles a deterministic video spec,
+and renders a branded vertical MP4 with Remotion.
 
-- 🌐 [overlaymotion.com](https://overlaymotion.com)
-- 🎨 [Template gallery](https://overlaymotion.com/templates)
-- 🚀 [Quick start](https://overlaymotion.com/quick-start)
-- 📖 [Docs](https://overlaymotion.com/docs)
+## Local sample
 
-Built on [Remotion](https://www.remotion.dev).
+Requires Node 20.19+, pnpm, and Python 3.10+.
 
-## The idea
+```bash
+pnpm install
+pnpm gff:sample
+```
 
-**Ask Claude Code, Codex or any coding agent to edit your videos.**
+Create a local two-voice, timestamped audio demo and render the Simplified
+Guided Communication one turn at a time:
 
-Point it at this repo and say what you want in a sentence:
+```bash
+pnpm gff:demo-audio
+pnpm gff:sample-spoken
+```
 
-> Use https://github.com/ricardo/overlay-motion
->
-> Add subtitles to "video.mov"
+The demo audio uses macOS `say` and is marked as synthetic in the source and
+render manifests. Production renders should use the canonical GFF audio file
+and its supplied/forced-aligned segment timestamps.
 
-That is the whole interface. The agent reads the contract in this repo, picks
-the template, times the words against the real audio, and renders the file. You
-never open an editor and you never write motion code.
+Outputs:
 
-Ask for more and it keeps working the same way:
+- `renders/bakery-dialogue-preview.mp4`
+- `work/bakery-dialogue.props.json`
+- `work/bakery-dialogue.manifest.json`
 
-> Put my logo in the corner for the first three seconds.
+Open the template gallery with `pnpm studio`.
 
-> Add a countdown before the intro, then a lower third with my name.
+## Feed ingestion and safety boundary
 
-> Same video, but in my brand colors and square for Instagram.
+An explicit request can upload a QA-passed render to the private GetFluentFast
+S3/DynamoDB feed with `npm run gff:feed-upload -- ...`. This is internal feed
+ingestion, not social publishing. Instagram, YouTube, TikTok, and other public
+destinations remain a separate approval-gated layer. See
+`docs/PUBLISHING_LAYER.md`.
 
-## 📦 What is in the box
+## Upstream motion engine
 
-- 🎨 **32 templates**, all free: captions, lower thirds, countdowns, chat
-  bubbles, charts, quote and tweet cards, audiograms, b-roll frames, steps,
-  tickers, stickers and more. Every one is animated in the
-  [gallery](https://overlaymotion.com/templates).
-- 🖌️ **Your brand, not ours.** Templates read design tokens and nothing else,
-  so the same template renders in any identity.
-- 🎯 **Subtitles that land on the word.** Timed by forced alignment against the
-  audio, never by a transcriber's guess.
-- 🔊 **Sound and camera.** Cues fire when things appear, a music bed sits under
-  the speech at a level validation enforces, and push-ins, pull-outs and pans
-  work on the footage, one overlay, or the whole composition.
-
-## What you need
-
-Node 20.19 or newer, git, and ffmpeg. Subtitles also need Python and a forced
-aligner.
-
-You do not have to check any of that yourself. The repo ships a report that
-says what is ready and what is missing before a render can fail halfway
-through, and your agent runs it first. The
-[quick start](https://overlaymotion.com/quick-start) walks through the first
-render.
-
-## Make the agent use this checkout
-
-Open this repository as the agent's working directory, or explicitly tell the
-agent to use its path. Agent instruction files are scoped to their directory
-tree: a downloaded child repository cannot force an agent launched in a parent
-folder to discover or prefer it.
-
-For example, launch Codex with this checkout as its directory, or begin the
-request with:
-
-> Use `./overlay-motion/AGENTS.md` and the registered OverlayMotion templates
-> for this edit.
-
-Once the agent enters this repository, `AGENTS.md` requires registered templates
-for supported visuals and requires the template slug in the completion report.
-
-## Docs
-
-| Page | What it answers |
-| --- | --- |
-| [Quick start](docs/quick-start.md) | Clone to rendered file |
-| [Edit Spec v1](docs/edit-spec.md) | The grammar: regions, time, source contracts, motion, themes |
-| [Camera motion](docs/camera-motion-spec.md) | Push-ins, pull-outs, pans, and what validation rejects |
-| [Agent playbook](docs/agent-playbook.md) | The editorial contract, and which page a request needs |
-| [AI instructions](docs/ai-instructions.md) | How a request becomes an edit |
-| [Agent toolkit](docs/agent-toolkit.md) | Capability contracts for external tools |
-| [Features](docs/features/) | One page per job: captions, background removal, tracking, voice cleanup, music, sound, delivery color |
-
-## For AI agents
-
-[AGENTS.md](AGENTS.md) is the entry point, and it is short on purpose. It
-routes rather than carries: a caption job never has to read the
-background-removal page. The rules that are not negotiable live there too, the
-sharpest being that captions are timed by forced alignment or not shipped.
-
-## License
-
-Source-available under the
-[OverlayMotion Sustainable Use License](LICENSE). The short version, with
-[LICENSE](LICENSE) as the text that actually governs:
-
-- ✅ **Your videos are yours.** Outputs sit outside the license entirely.
-  Publish them, sell them, deliver them to clients, no royalty. Rendering
-  videos for sale counts as internal business use, so paid client work is fine.
-- ✅ **Use and modify it** for your own internal business, personal or
-  non-commercial purposes.
-- ⚠️ **Redistribute it** only free of charge, only non-commercially, and only
-  with the license text attached.
-- ❌ **You may not** sell it or charge for access, ship it inside a template
-  pack, starter kit or component library, or run it as a hosted service whose
-  main value is access to the library itself rather than the videos it makes.
-
-Anything outside that, including a commercial license, needs an agreement:
-[overlaymotion.com/pro](https://overlaymotion.com/pro), or open an issue.
-
-Built on Remotion and not affiliated with it. Remotion carries its own license,
-free for individuals and companies up to three people, with a Company License
-beyond that. Check [remotion.dev/license](https://www.remotion.dev/license)
-against your own situation before shipping.
+The renderer is based on OverlayMotion Core 0.8.0. Its license and notices are
+preserved in this repository. GFF-specific compilation, brand settings, skill,
+and content adapters live alongside the engine.

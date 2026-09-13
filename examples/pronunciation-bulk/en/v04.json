@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-v04",
+  "module_code": "EN-V04",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-v04-01-arm",
+      "pattern": "ar",
+      "phonetic": "/ɑɹ/",
+      "word": "arm",
+      "word_phonetic": "/ɑɹm/",
+      "focus": "ar"
+    },
+    {
+      "card_id": "en-v04-02-car",
+      "pattern": "ar",
+      "phonetic": "/ɑɹ/",
+      "word": "car",
+      "word_phonetic": "/kɑɹ/",
+      "focus": "ar"
+    },
+    {
+      "card_id": "en-v04-03-born",
+      "pattern": "or",
+      "phonetic": "/ɔɹ/",
+      "word": "born",
+      "word_phonetic": "/bɔɹn/",
+      "focus": "or"
+    },
+    {
+      "card_id": "en-v04-04-short",
+      "pattern": "or",
+      "phonetic": "/ɔɹ/",
+      "word": "short",
+      "word_phonetic": "/ʃɔɹt/",
+      "focus": "or"
+    },
+    {
+      "card_id": "en-v04-05-her",
+      "pattern": "er / ir / ur",
+      "phonetic": "/ɝ/",
+      "word": "her",
+      "word_phonetic": "/hɝ/",
+      "focus": "er"
+    },
+    {
+      "card_id": "en-v04-06-bird",
+      "pattern": "er / ir / ur",
+      "phonetic": "/ɝ/",
+      "word": "bird",
+      "word_phonetic": "/bɝd/",
+      "focus": "ir"
+    },
+    {
+      "card_id": "en-v04-07-turn",
+      "pattern": "er / ir / ur",
+      "phonetic": "/ɝ/",
+      "word": "turn",
+      "word_phonetic": "/tɝn/",
+      "focus": "ur"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

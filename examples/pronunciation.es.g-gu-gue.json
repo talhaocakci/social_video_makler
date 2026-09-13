@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-es-a1-g-gu-gue",
+  "version": "000001",
+  "target_language": "es",
+  "locale": "es-ES",
+  "variety": "español estándar de España",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "g-gato",
+      "pattern": "g + a, o, u",
+      "phonetic": "/ɡ/",
+      "word": "gato",
+      "word_phonetic": "/ˈɡato/",
+      "focus": "g"
+    },
+    {
+      "card_id": "g-gente",
+      "pattern": "g + e, i",
+      "phonetic": "/x/",
+      "word": "gente",
+      "word_phonetic": "/ˈxente/",
+      "focus": "g"
+    },
+    {
+      "card_id": "gu-guerra",
+      "pattern": "gu + e, i",
+      "phonetic": "/ɡ/",
+      "word": "guerra",
+      "word_phonetic": "/ˈɡera/",
+      "focus": "gu"
+    },
+    {
+      "card_id": "gue-pinguino",
+      "pattern": "gü + e, i",
+      "phonetic": "/ɡw/",
+      "word": "pingüino",
+      "word_phonetic": "/piŋˈɡwino/",
+      "focus": "gü"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Instituto Cervantes",
+      "title": "Plan curricular: Pronunciación y prosodia, inventario A1-A2",
+      "url": "https://cvc.cervantes.es/ensenanza/biblioteca_Ele/plan_curricular/niveles/03_pronunciacion_inventario_a1-a2.htm",
+      "supports": ["Spanish phoneme inventory", "sound-spelling relationships", "regional variety disclosure"]
+    },
+    {
+      "publisher": "Real Academia Española and ASALE",
+      "title": "Diccionario panhispánico de dudas: u",
+      "url": "https://www.rae.es/dpd/u",
+      "supports": ["silent u in gue/gui", "pronounced ü in güe/güi"]
+    }
+  ],
+  "release_state": "local_preview_only"
+}

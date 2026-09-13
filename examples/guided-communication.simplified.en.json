@@ -1,0 +1,34 @@
+{
+  "asset_id": "offline-simplified-order-at-a-restaurant-en",
+  "version": "2026-08-28",
+  "status": "OFFLINE_APPROVED_ARTIFACT",
+  "delivery_profile": "simplified",
+  "target_language": "en",
+  "cefr": "A2",
+  "title": "Choose and order at a restaurant",
+  "summary": "Compare two dishes, choose one, and confirm the order.",
+  "category": {
+    "id": "food-and-drinks",
+    "title": "Food & Drinks"
+  },
+  "learning_chain": {
+    "asset_id": "offline-order-food-drinks-family-v1-en",
+    "version": "2026-08-28",
+    "title": "Choose a Meal and Order at a Restaurant"
+  },
+  "source_reference": "getfluentfast_backend/outputs/gff-content-skill-2026-08-28/order-food-drinks-family-v1/create_simplified_restaurant_profiles.py#CONFIG.en.dialogue",
+  "speaker_labels": {
+    "side_a": "Server",
+    "side_b": "Guest"
+  },
+  "dialogue_turns": [
+    {"turn_id": "turn_001", "speaker_side": "side_a", "text": "You can choose the vegetable pie or the mushroom pasta."},
+    {"turn_id": "turn_002", "speaker_side": "side_b", "text": "I have a question. What comes with the vegetable pie?"},
+    {"turn_id": "turn_003", "speaker_side": "side_a", "text": "It comes with a small salad."},
+    {"turn_id": "turn_004", "speaker_side": "side_b", "text": "And what's in the mushroom pasta?"},
+    {"turn_id": "turn_005", "speaker_side": "side_a", "text": "Mushrooms and cream. Would you like anything to drink?"},
+    {"turn_id": "turn_006", "speaker_side": "side_b", "text": "I'd prefer something without cream, so I'll have the vegetable pie and a sparkling water, please."},
+    {"turn_id": "turn_007", "speaker_side": "side_a", "text": "So that's the vegetable pie with salad and a sparkling water."},
+    {"turn_id": "turn_008", "speaker_side": "side_b", "text": "Yes, that's right. Thank you."}
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-c07",
+  "module_code": "EN-C07",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-c07-01-sit",
+      "pattern": "s",
+      "phonetic": "/s/",
+      "word": "sit",
+      "word_phonetic": "/sɪt/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-c07-02-bus",
+      "pattern": "s",
+      "phonetic": "/s/",
+      "word": "bus",
+      "word_phonetic": "/bʌs/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-c07-03-basic",
+      "pattern": "s",
+      "phonetic": "/s/",
+      "word": "basic",
+      "word_phonetic": "/ˈbeɪsɪk/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-c07-04-music",
+      "pattern": "s",
+      "phonetic": "/z/",
+      "word": "music",
+      "word_phonetic": "/ˈmjuːzɪk/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-c07-05-roses",
+      "pattern": "s",
+      "phonetic": "/z/",
+      "word": "roses",
+      "word_phonetic": "/ˈɹoʊzɪz/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-c07-06-easy",
+      "pattern": "s",
+      "phonetic": "/z/",
+      "word": "easy",
+      "word_phonetic": "/ˈiːzi/",
+      "focus": "s"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

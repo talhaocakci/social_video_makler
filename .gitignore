@@ -12,10 +12,12 @@ dev-assets/projects/*.mov
 .env
 .react-router/
 renders/
+work/
 dev-assets/
 
 # personal field-test footage, never in the repo
 public/projects/
+/public/generated/
 
 # update-check cache, per checkout
 .overlay-motion/

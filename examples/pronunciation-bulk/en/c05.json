@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-c05",
+  "module_code": "EN-C05",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-c05-01-pet",
+      "pattern": "p",
+      "phonetic": "/p/",
+      "word": "pet",
+      "word_phonetic": "/pɛt/",
+      "focus": "p"
+    },
+    {
+      "card_id": "en-c05-02-top",
+      "pattern": "t",
+      "phonetic": "/t/",
+      "word": "top",
+      "word_phonetic": "/tɑp/",
+      "focus": "t"
+    },
+    {
+      "card_id": "en-c05-03-vet",
+      "pattern": "v",
+      "phonetic": "/v/",
+      "word": "vet",
+      "word_phonetic": "/vɛt/",
+      "focus": "v"
+    },
+    {
+      "card_id": "en-c05-04-move",
+      "pattern": "v",
+      "phonetic": "/v/",
+      "word": "move",
+      "word_phonetic": "/muːv/",
+      "focus": "v"
+    },
+    {
+      "card_id": "en-c05-05-zip",
+      "pattern": "z / zz",
+      "phonetic": "/z/",
+      "word": "zip",
+      "word_phonetic": "/zɪp/",
+      "focus": "z"
+    },
+    {
+      "card_id": "en-c05-06-buzz",
+      "pattern": "z / zz",
+      "phonetic": "/z/",
+      "word": "buzz",
+      "word_phonetic": "/bʌz/",
+      "focus": "zz"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

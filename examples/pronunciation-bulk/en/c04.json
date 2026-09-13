@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-c04",
+  "module_code": "EN-C04",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-c04-01-leg",
+      "pattern": "l / ll",
+      "phonetic": "/l/",
+      "word": "leg",
+      "word_phonetic": "/lɛɡ/",
+      "focus": "l"
+    },
+    {
+      "card_id": "en-c04-02-hill",
+      "pattern": "l / ll",
+      "phonetic": "/l/",
+      "word": "hill",
+      "word_phonetic": "/hɪl/",
+      "focus": "ll"
+    },
+    {
+      "card_id": "en-c04-03-man",
+      "pattern": "m",
+      "phonetic": "/m/",
+      "word": "man",
+      "word_phonetic": "/mæn/",
+      "focus": "m"
+    },
+    {
+      "card_id": "en-c04-04-name",
+      "pattern": "m",
+      "phonetic": "/m/",
+      "word": "name",
+      "word_phonetic": "/neɪm/",
+      "focus": "m"
+    },
+    {
+      "card_id": "en-c04-05-net",
+      "pattern": "n",
+      "phonetic": "/n/",
+      "word": "net",
+      "word_phonetic": "/nɛt/",
+      "focus": "n"
+    },
+    {
+      "card_id": "en-c04-06-dinner",
+      "pattern": "n",
+      "phonetic": "/n/",
+      "word": "dinner",
+      "word_phonetic": "/ˈdɪnɚ/",
+      "focus": "nn"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

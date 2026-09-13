@@ -37,8 +37,10 @@ import { cortisolGaugeDef } from "./cortisol-gauge";
 import { donutBreakdownDef } from "./donut-breakdown";
 import { donutChartDef } from "./donut-chart";
 import { photoStackDef } from "./photo-stack";
+import { pronunciationCardDef } from "./pronunciation-card";
 
 const TEMPLATE_DEFINITIONS: TemplateDef[] = [
+  pronunciationCardDef,
   chatBubblesDef,
   quoteCardDef,
   checklistStepsDef,

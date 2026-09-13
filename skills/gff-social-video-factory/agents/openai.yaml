@@ -1,0 +1,4 @@
+interface:
+  display_name: "GFF Social Video Factory"
+  short_description: "Turn GFF content into preview-ready social videos"
+  default_prompt: "Use $gff-social-video-factory to render a preview social video from this GFF content source."

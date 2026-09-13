@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a2-e04",
+  "module_code": "EN-E04",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A2",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-e04-01-cat",
+      "pattern": "c",
+      "phonetic": "/k/",
+      "word": "cat",
+      "word_phonetic": "/kæt/",
+      "focus": "c"
+    },
+    {
+      "card_id": "en-e04-02-skin",
+      "pattern": "k",
+      "phonetic": "/k/",
+      "word": "skin",
+      "word_phonetic": "/skɪn/",
+      "focus": "k"
+    },
+    {
+      "card_id": "en-e04-03-back",
+      "pattern": "ck",
+      "phonetic": "/k/",
+      "word": "back",
+      "word_phonetic": "/bæk/",
+      "focus": "ck"
+    },
+    {
+      "card_id": "en-e04-04-bridge",
+      "pattern": "dge",
+      "phonetic": "/dʒ/",
+      "word": "bridge",
+      "word_phonetic": "/bɹɪdʒ/",
+      "focus": "dge"
+    },
+    {
+      "card_id": "en-e04-05-badge",
+      "pattern": "dge",
+      "phonetic": "/dʒ/",
+      "word": "badge",
+      "word_phonetic": "/bædʒ/",
+      "focus": "dge"
+    },
+    {
+      "card_id": "en-e04-06-match",
+      "pattern": "tch",
+      "phonetic": "/tʃ/",
+      "word": "match",
+      "word_phonetic": "/mætʃ/",
+      "focus": "tch"
+    },
+    {
+      "card_id": "en-e04-07-kitchen",
+      "pattern": "tch",
+      "phonetic": "/tʃ/",
+      "word": "kitchen",
+      "word_phonetic": "/ˈkɪtʃən/",
+      "focus": "tch"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-es-a1-v05",
+  "module_code": "ES-V05",
+  "version": "000001",
+  "target_language": "es",
+  "locale": "es-419",
+  "variety": "español internacional, seseo y yeísmo",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "es-v05-01-caso",
+      "pattern": "caso / casó",
+      "phonetic": "/ˈkaso/ · /kaˈso/",
+      "word": "caso",
+      "word_phonetic": "/ˈkaso/",
+      "focus": "a"
+    },
+    {
+      "card_id": "es-v05-02-caso",
+      "pattern": "caso / casó",
+      "phonetic": "/ˈkaso/ · /kaˈso/",
+      "word": "casó",
+      "word_phonetic": "/kaˈso/",
+      "focus": "ó"
+    },
+    {
+      "card_id": "es-v05-03-papa",
+      "pattern": "papa / papá",
+      "phonetic": "/ˈpapa/ · /paˈpa/",
+      "word": "papa",
+      "word_phonetic": "/ˈpapa/",
+      "focus": "a"
+    },
+    {
+      "card_id": "es-v05-04-papa",
+      "pattern": "papa / papá",
+      "phonetic": "/ˈpapa/ · /paˈpa/",
+      "word": "papá",
+      "word_phonetic": "/paˈpa/",
+      "focus": "á"
+    },
+    {
+      "card_id": "es-v05-05-termino",
+      "pattern": "termino / terminó",
+      "phonetic": "/teɾˈmino/ · /teɾmiˈno/",
+      "word": "termino",
+      "word_phonetic": "/teɾˈmino/",
+      "focus": "i"
+    },
+    {
+      "card_id": "es-v05-06-termino",
+      "pattern": "termino / terminó",
+      "phonetic": "/teɾˈmino/ · /teɾmiˈno/",
+      "word": "terminó",
+      "word_phonetic": "/teɾmiˈno/",
+      "focus": "ó"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Instituto Cervantes",
+      "title": "Plan curricular: Pronunciación y prosodia, inventario A1-A2",
+      "url": "https://cvc.cervantes.es/ensenanza/biblioteca_Ele/plan_curricular/niveles/03_pronunciacion_inventario_a1-a2.htm",
+      "supports": [
+        "Spanish phoneme inventory",
+        "sound-spelling relationships",
+        "connected speech"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española and ASALE",
+      "title": "Diccionario panhispánico de dudas: u",
+      "url": "https://www.rae.es/dpd/u",
+      "supports": [
+        "silent u in que/qui and gue/gui",
+        "pronounced ü in güe/güi"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española",
+      "title": "Ortografía básica de la lengua española",
+      "url": "https://www.rae.es/diccionario-estudiante/docs/ortografia.pdf",
+      "supports": [
+        "orthographic rules",
+        "written stress"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

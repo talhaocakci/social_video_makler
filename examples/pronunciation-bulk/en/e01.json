@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a2-e01",
+  "module_code": "EN-E01",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A2",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-e01-01-cats",
+      "pattern": "-s",
+      "phonetic": "/s/",
+      "word": "cats",
+      "word_phonetic": "/kæts/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-e01-02-works",
+      "pattern": "-s",
+      "phonetic": "/s/",
+      "word": "works",
+      "word_phonetic": "/wɝks/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-e01-03-dogs",
+      "pattern": "-s",
+      "phonetic": "/z/",
+      "word": "dogs",
+      "word_phonetic": "/dɔɡz/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-e01-04-runs",
+      "pattern": "-s",
+      "phonetic": "/z/",
+      "word": "runs",
+      "word_phonetic": "/ɹʌnz/",
+      "focus": "s"
+    },
+    {
+      "card_id": "en-e01-05-buses",
+      "pattern": "-es",
+      "phonetic": "/ɪz/",
+      "word": "buses",
+      "word_phonetic": "/ˈbʌsɪz/",
+      "focus": "es"
+    },
+    {
+      "card_id": "en-e01-06-watches",
+      "pattern": "-es",
+      "phonetic": "/ɪz/",
+      "word": "watches",
+      "word_phonetic": "/ˈwɔtʃɪz/",
+      "focus": "es"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

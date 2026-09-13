@@ -1,0 +1,66 @@
+{
+  "asset_id": "offline-simplified-order-at-a-restaurant-de",
+  "version": "2026-08-28",
+  "status": "OFFLINE_APPROVED_ARTIFACT",
+  "delivery_profile": "simplified",
+  "target_language": "de",
+  "cefr": "A2",
+  "title": "Im Restaurant wählen und bestellen",
+  "summary": "Compare two dishes, choose one, and confirm the order.",
+  "category": {
+    "id": "food-and-drinks",
+    "title": "Food & Drinks"
+  },
+  "learning_chain": {
+    "asset_id": "offline-order-food-drinks-family-v1-de",
+    "version": "2026-08-28",
+    "title": "Choose a Meal and Order at a Restaurant"
+  },
+  "source_reference": "getfluentfast_backend/outputs/gff-content-skill-2026-08-28/order-food-drinks-family-v1/create_simplified_restaurant_profiles.py#CONFIG.de.dialogue",
+  "speaker_labels": {
+    "side_a": "Service",
+    "side_b": "Gast"
+  },
+  "dialogue_turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_side": "side_a",
+      "text": "Sie können zwischen Gemüsecurry und Ofenkartoffel wählen."
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_side": "side_b",
+      "text": "Ich habe noch eine Frage. Was ist im Gemüsecurry?"
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_side": "side_a",
+      "text": "Gemüse und Kokosmilch. Dazu gibt es Reis."
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_side": "side_b",
+      "text": "Und was gibt es zur Ofenkartoffel?"
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_side": "side_a",
+      "text": "Kräuterquark und Salat. Möchten Sie noch etwas trinken?"
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_side": "side_b",
+      "text": "Ich möchte etwas ohne Reis. Dann nehme ich die Ofenkartoffel und ein stilles Wasser, bitte."
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_side": "side_a",
+      "text": "Also einmal die Ofenkartoffel und ein stilles Wasser."
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_side": "side_b",
+      "text": "Ja, genau. Danke."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-de-a1-c06",
+  "module_code": "DE-C06",
+  "version": "000001",
+  "target_language": "de",
+  "locale": "de-DE",
+  "variety": "Standarddeutsch",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "de-c06-01-quelle",
+      "pattern": "qu",
+      "phonetic": "/kv/",
+      "word": "Quelle",
+      "word_phonetic": "/ˈkvɛlə/",
+      "focus": "Qu"
+    },
+    {
+      "card_id": "de-c06-02-bequem",
+      "pattern": "qu",
+      "phonetic": "/kv/",
+      "word": "bequem",
+      "word_phonetic": "/bəˈkveːm/",
+      "focus": "qu"
+    },
+    {
+      "card_id": "de-c06-03-taxi",
+      "pattern": "x / chs",
+      "phonetic": "/ks/",
+      "word": "Taxi",
+      "word_phonetic": "/ˈtaksi/",
+      "focus": "x"
+    },
+    {
+      "card_id": "de-c06-04-sechs",
+      "pattern": "x / chs",
+      "phonetic": "/ks/",
+      "word": "sechs",
+      "word_phonetic": "/ˈzɛks/",
+      "focus": "chs"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Leibniz-Institut für Deutsche Sprache",
+      "title": "Amtliches Regelwerk: Vokale",
+      "url": "https://grammis.ids-mannheim.de/rechtschreibung/6145",
+      "supports": [
+        "German vowel spelling",
+        "vowel combinations"
+      ]
+    },
+    {
+      "publisher": "Leibniz-Institut für Deutsche Sprache",
+      "title": "Das ie",
+      "url": "https://grammis.ids-mannheim.de/progr@mm/6803",
+      "supports": [
+        "ie spelling",
+        "long i pronunciation"
+      ]
+    },
+    {
+      "publisher": "Goethe-Institut London",
+      "title": "Deutsch mit Karla & Kai, Volume 1",
+      "url": "https://www.goethe.de/prj/dlp/dlapi/v1/index.cfm?endpoint=%2Ftlm%2Fdownload&file_ID=8752&tlm_ID=2776",
+      "supports": [
+        "learner progression",
+        "example-word families"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

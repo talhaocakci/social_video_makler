@@ -1,7 +1,7 @@
 {
-  "name": "overlay-motion",
-  "version": "0.8.0",
-  "description": "Video templates that wear the customer's brand. One JSON edit spec in, a rendered branded video out. Built on Remotion.",
+  "name": "@getfluentfast/social-video-factory",
+  "version": "0.1.0",
+  "description": "Compile versioned GetFluentFast learning content into preview-ready Remotion videos.",
   "keywords": [
     "remotion",
     "video",
@@ -14,15 +14,7 @@
     "react",
     "ai-agent"
   ],
-  "homepage": "https://overlaymotion.com",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ricardo/overlay-motion.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ricardo/overlay-motion/issues"
-  },
-  "author": "Ricardo Metring",
+  "author": "GetFluentFast; motion engine based on OverlayMotion by Ricardo Metring",
   "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "engines": {
@@ -55,14 +47,23 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "test": "tsx --test tests/*.test.ts",
+    "test": "tsx --test tests/*.test.ts && python3 -m unittest tests/test_gff_media.py tests/test_gff_feed.py tests/test_gff_pronunciation.py tests/test_gff_pronunciation_bulk.py",
     "agent:guide": "tsx scripts/build-agent-guide.mts",
     "om:check": "tsx scripts/update.mts",
     "typecheck": "tsc --noEmit",
     "studio": "remotion studio remotion/index.ts",
     "render": "remotion render remotion/index.ts",
     "demo-audio": "node scripts/make-demo-audio.mjs",
-    "sfx": "node scripts/make-sfx.mjs"
+    "sfx": "node scripts/make-sfx.mjs",
+    "gff:compile": "python3 scripts/gff_media.py compile",
+    "gff:render": "python3 scripts/gff_media.py render",
+    "gff:feed-upload": "python3 scripts/gff_feed.py upload",
+    "gff:sample": "python3 scripts/gff_media.py render --source examples/guided-communication.de.json --output renders/bakery-dialogue-preview.mp4 --props-out work/bakery-dialogue.props.json --manifest-out work/bakery-dialogue.manifest.json",
+    "gff:demo-audio": "python3 scripts/make_demo_guided_audio.py",
+    "gff:sample-spoken": "python3 scripts/gff_media.py render --source examples/guided-communication.simplified.de.audio.json --output renders/simplified-guided-spoken-preview.mp4 --thumbnail renders/simplified-guided-spoken-preview-cover.png --props-out work/simplified-guided-spoken.props.json --manifest-out work/simplified-guided-spoken.manifest.json",
+    "gff:pronunciation-validate": "python3 scripts/gff_pronunciation.py validate --source examples/pronunciation.de.ei-ie.json && python3 scripts/gff_pronunciation.py validate --source examples/pronunciation.en.th.json && python3 scripts/gff_pronunciation.py validate --source examples/pronunciation.es.g-gu-gue.json",
+    "gff:pronunciation-bulk-validate": "python3 scripts/gff_pronunciation_bulk.py validate --languages en,es,de",
+    "gff:pronunciation-bulk-qwen-plan": "python3 scripts/gff_pronunciation_bulk.py qwen-batches --languages en,es,de"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
@@ -86,5 +87,6 @@
     "@types/topojson-client": "^3.1.5",
     "tsx": "^4.20.6",
     "typescript": "~6.0.3"
-  }
+  },
+  "packageManager": "pnpm@11.19.0"
 }

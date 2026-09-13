@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-es-a1-v02",
+  "module_code": "ES-V02",
+  "version": "000001",
+  "target_language": "es",
+  "locale": "es-419",
+  "variety": "español internacional, seseo y yeísmo",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "es-v02-01-viaje",
+      "pattern": "ia",
+      "phonetic": "/ja/",
+      "word": "viaje",
+      "word_phonetic": "/ˈbjaxe/",
+      "focus": "ia"
+    },
+    {
+      "card_id": "es-v02-02-tierra",
+      "pattern": "ie",
+      "phonetic": "/je/",
+      "word": "tierra",
+      "word_phonetic": "/ˈtjera/",
+      "focus": "ie"
+    },
+    {
+      "card_id": "es-v02-03-patio",
+      "pattern": "io",
+      "phonetic": "/jo/",
+      "word": "patio",
+      "word_phonetic": "/ˈpatjo/",
+      "focus": "io"
+    },
+    {
+      "card_id": "es-v02-04-cuatro",
+      "pattern": "ua",
+      "phonetic": "/wa/",
+      "word": "cuatro",
+      "word_phonetic": "/ˈkwatɾo/",
+      "focus": "ua"
+    },
+    {
+      "card_id": "es-v02-05-puerta",
+      "pattern": "ue",
+      "phonetic": "/we/",
+      "word": "puerta",
+      "word_phonetic": "/ˈpweɾta/",
+      "focus": "ue"
+    },
+    {
+      "card_id": "es-v02-06-cuota",
+      "pattern": "uo",
+      "phonetic": "/wo/",
+      "word": "cuota",
+      "word_phonetic": "/ˈkwota/",
+      "focus": "uo"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Instituto Cervantes",
+      "title": "Plan curricular: Pronunciación y prosodia, inventario A1-A2",
+      "url": "https://cvc.cervantes.es/ensenanza/biblioteca_Ele/plan_curricular/niveles/03_pronunciacion_inventario_a1-a2.htm",
+      "supports": [
+        "Spanish phoneme inventory",
+        "sound-spelling relationships",
+        "connected speech"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española and ASALE",
+      "title": "Diccionario panhispánico de dudas: u",
+      "url": "https://www.rae.es/dpd/u",
+      "supports": [
+        "silent u in que/qui and gue/gui",
+        "pronounced ü in güe/güi"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española",
+      "title": "Ortografía básica de la lengua española",
+      "url": "https://www.rae.es/diccionario-estudiante/docs/ortografia.pdf",
+      "supports": [
+        "orthographic rules",
+        "written stress"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

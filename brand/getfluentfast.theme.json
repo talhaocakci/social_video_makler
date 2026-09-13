@@ -1,0 +1,36 @@
+{
+  "name": "GetFluentFast Night Mint",
+  "colors": {
+    "primary": "#10B981",
+    "secondary": "#006C49",
+    "accent": "#FBBF24",
+    "onPrimary": "#04150F",
+    "surface": "#1F2C3D",
+    "onSurface": "#F8F9FF",
+    "muted": "#DAE3F6",
+    "background": "#121C2A"
+  },
+  "fonts": {
+    "heading": "'Be Vietnam Pro', 'Avenir Next', system-ui, sans-serif",
+    "body": "'Be Vietnam Pro', 'Avenir Next', system-ui, sans-serif"
+  },
+  "radius": 36,
+  "logoText": "GetFluentFast",
+  "style": {
+    "backgroundGradient": {
+      "from": "#121C2A",
+      "to": "#143134",
+      "angle": 145
+    },
+    "surfaceGradient": {
+      "from": "#2A3D4C",
+      "to": "#16242E",
+      "angle": 145
+    },
+    "surface": "glass",
+    "blur": 34,
+    "opacity": 0.7,
+    "borderColor": "#5C7367",
+    "borderOpacity": 0.42
+  }
+}

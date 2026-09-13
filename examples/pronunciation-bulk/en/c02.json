@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-c02",
+  "module_code": "EN-C02",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-c02-01-cat",
+      "pattern": "c",
+      "phonetic": "/k/",
+      "word": "cat",
+      "word_phonetic": "/kæt/",
+      "focus": "c"
+    },
+    {
+      "card_id": "en-c02-02-cold",
+      "pattern": "c",
+      "phonetic": "/k/",
+      "word": "cold",
+      "word_phonetic": "/koʊld/",
+      "focus": "c"
+    },
+    {
+      "card_id": "en-c02-03-key",
+      "pattern": "k",
+      "phonetic": "/k/",
+      "word": "key",
+      "word_phonetic": "/kiː/",
+      "focus": "k"
+    },
+    {
+      "card_id": "en-c02-04-skin",
+      "pattern": "k",
+      "phonetic": "/k/",
+      "word": "skin",
+      "word_phonetic": "/skɪn/",
+      "focus": "k"
+    },
+    {
+      "card_id": "en-c02-05-back",
+      "pattern": "ck",
+      "phonetic": "/k/",
+      "word": "back",
+      "word_phonetic": "/bæk/",
+      "focus": "ck"
+    },
+    {
+      "card_id": "en-c02-06-clock",
+      "pattern": "ck",
+      "phonetic": "/k/",
+      "word": "clock",
+      "word_phonetic": "/klɑk/",
+      "focus": "ck"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

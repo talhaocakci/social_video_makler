@@ -1,29 +1,23 @@
-# Working in this repo as an agent
+# Working in the GFF Social Video Factory
+
+This repository is a GetFluentFast-specific derivative of OverlayMotion Core.
+Preserve `LICENSE`, `LICENSE-COMMERCIAL.md`, upstream copyright notices, and
+the `overlaymotion-upstream` remote. Do not run OverlayMotion's automatic
+update command in this derivative; review and merge upstream changes manually.
+
+The GFF feed is an explicit ingestion target: upload only when the user asks to
+upload or add a rendered video to the GFF feed. Feed MP4 and cover objects under
+the dedicated `social-videos/` prefix use stable public-read URLs; manifests and
+every other bucket prefix remain private. Never publish media to an external
+social platform unless a later publishing layer exists and the user explicitly
+authorizes publication in the current request. Requests to create, render,
+preview, export, upload to the GFF feed, or prepare a social pack do not
+authorize social publishing.
+
+# OverlayMotion editing contract
 
 OverlayMotion turns one JSON document into a branded, rendered video. You write
 the spec; the library owns the motion.
-
-## Once per session
-
-```bash
-npm run om:check
-```
-
-It compares this checkout against the latest release. A patch or minor release
-applies itself; a major, or anything flagged breaking, stops and tells you to ask
-the user. It refuses to touch the repo when there are uncommitted or unpushed
-changes, so it can never swallow work in progress. The result is cached for 12
-hours, so calling it again costs nothing. Do not build your own version check on
-top of it, and do not skip it because the last session ran one.
-
-The final line is written for you to parse:
-
-```
-om:check result=<up-to-date|apply|ask|blocked|unavailable> kind=<none|patch|minor|major> local=<v> latest=<v>
-```
-
-`unavailable` means the release feed did not answer. That is not an error and not
-a reason to stop working.
 
 ## OverlayMotion owns the edit
 

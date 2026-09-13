@@ -1,0 +1,121 @@
+{
+  "asset_id": "offline-simplified-order-at-a-restaurant-de",
+  "version": "2026-08-28",
+  "status": "OFFLINE_APPROVED_ARTIFACT",
+  "delivery_profile": "simplified",
+  "target_language": "de",
+  "cefr": "A2",
+  "title": "Im Restaurant wählen und bestellen",
+  "summary": "Compare two dishes, choose one, and confirm the order.",
+  "category": {
+    "id": "food-and-drinks",
+    "title": "Food & Drinks"
+  },
+  "learning_chain": {
+    "asset_id": "offline-order-food-drinks-family-v1-de",
+    "version": "2026-08-28",
+    "title": "Choose a Meal and Order at a Restaurant"
+  },
+  "source_reference": "getfluentfast_backend/outputs/gff-content-skill-2026-08-28/order-food-drinks-family-v1/create_simplified_restaurant_profiles.py#CONFIG.de.dialogue",
+  "speaker_labels": {
+    "side_a": "Service",
+    "side_b": "Gast"
+  },
+  "dialogue_turns": [
+    {
+      "turn_id": "turn_001",
+      "speaker_side": "side_a",
+      "text": "Sie können zwischen Gemüsecurry und Ofenkartoffel wählen."
+    },
+    {
+      "turn_id": "turn_002",
+      "speaker_side": "side_b",
+      "text": "Ich habe noch eine Frage. Was ist im Gemüsecurry?"
+    },
+    {
+      "turn_id": "turn_003",
+      "speaker_side": "side_a",
+      "text": "Gemüse und Kokosmilch. Dazu gibt es Reis."
+    },
+    {
+      "turn_id": "turn_004",
+      "speaker_side": "side_b",
+      "text": "Und was gibt es zur Ofenkartoffel?"
+    },
+    {
+      "turn_id": "turn_005",
+      "speaker_side": "side_a",
+      "text": "Kräuterquark und Salat. Möchten Sie noch etwas trinken?"
+    },
+    {
+      "turn_id": "turn_006",
+      "speaker_side": "side_b",
+      "text": "Ich möchte etwas ohne Reis. Dann nehme ich die Ofenkartoffel und ein stilles Wasser, bitte."
+    },
+    {
+      "turn_id": "turn_007",
+      "speaker_side": "side_a",
+      "text": "Also einmal die Ofenkartoffel und ein stilles Wasser."
+    },
+    {
+      "turn_id": "turn_008",
+      "speaker_side": "side_b",
+      "text": "Ja, genau. Danke."
+    }
+  ],
+  "audio": {
+    "src": "generated/simplified-restaurant-de.wav",
+    "duration_ms": 34245,
+    "segments": [
+      {
+        "turn_id": "turn_001",
+        "start_ms": 1750,
+        "end_ms": 5153
+      },
+      {
+        "turn_id": "turn_002",
+        "start_ms": 5533,
+        "end_ms": 9244
+      },
+      {
+        "turn_id": "turn_003",
+        "start_ms": 9624,
+        "end_ms": 12781
+      },
+      {
+        "turn_id": "turn_004",
+        "start_ms": 13161,
+        "end_ms": 15847
+      },
+      {
+        "turn_id": "turn_005",
+        "start_ms": 16227,
+        "end_ms": 19774
+      },
+      {
+        "turn_id": "turn_006",
+        "start_ms": 20154,
+        "end_ms": 26233
+      },
+      {
+        "turn_id": "turn_007",
+        "start_ms": 26613,
+        "end_ms": 29830
+      },
+      {
+        "turn_id": "turn_008",
+        "start_ms": 30210,
+        "end_ms": 32417
+      }
+    ],
+    "provenance": {
+      "kind": "local_demo_tts",
+      "engine": "macOS say",
+      "voices": {
+        "side_a": "Anna",
+        "side_b": "Eddy (German (Germany))"
+      },
+      "note": "Preview-only synthetic audio; replace with canonical GFF audio for production."
+    }
+  }
+}

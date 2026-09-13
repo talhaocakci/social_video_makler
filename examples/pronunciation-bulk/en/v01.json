@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-v01",
+  "module_code": "EN-V01",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-v01-01-cat",
+      "pattern": "a",
+      "phonetic": "/æ/",
+      "word": "cat",
+      "word_phonetic": "/kæt/",
+      "focus": "a"
+    },
+    {
+      "card_id": "en-v01-02-hen",
+      "pattern": "e",
+      "phonetic": "/ɛ/",
+      "word": "hen",
+      "word_phonetic": "/hɛn/",
+      "focus": "e"
+    },
+    {
+      "card_id": "en-v01-03-sit",
+      "pattern": "i",
+      "phonetic": "/ɪ/",
+      "word": "sit",
+      "word_phonetic": "/sɪt/",
+      "focus": "i"
+    },
+    {
+      "card_id": "en-v01-04-hot",
+      "pattern": "o",
+      "phonetic": "/ɑ/",
+      "word": "hot",
+      "word_phonetic": "/hɑt/",
+      "focus": "o"
+    },
+    {
+      "card_id": "en-v01-05-cup",
+      "pattern": "u",
+      "phonetic": "/ʌ/",
+      "word": "cup",
+      "word_phonetic": "/kʌp/",
+      "focus": "u"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

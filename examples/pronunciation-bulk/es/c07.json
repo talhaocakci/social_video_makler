@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-es-a1-g-gu-gue",
+  "module_code": "ES-C07",
+  "version": "000001",
+  "target_language": "es",
+  "locale": "es-419",
+  "variety": "español internacional, seseo y yeísmo",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "es-c07-01-gato",
+      "pattern": "g + a, o, u",
+      "phonetic": "/ɡ/",
+      "word": "gato",
+      "word_phonetic": "/ˈɡato/",
+      "focus": "g"
+    },
+    {
+      "card_id": "es-c07-02-goma",
+      "pattern": "g + a, o, u",
+      "phonetic": "/ɡ/",
+      "word": "goma",
+      "word_phonetic": "/ˈɡoma/",
+      "focus": "g"
+    },
+    {
+      "card_id": "es-c07-03-gusano",
+      "pattern": "g + a, o, u",
+      "phonetic": "/ɡ/",
+      "word": "gusano",
+      "word_phonetic": "/ɡuˈsano/",
+      "focus": "g"
+    },
+    {
+      "card_id": "es-c07-04-guerra",
+      "pattern": "gu + e, i",
+      "phonetic": "/ɡ/",
+      "word": "guerra",
+      "word_phonetic": "/ˈɡera/",
+      "focus": "gu"
+    },
+    {
+      "card_id": "es-c07-05-guitarra",
+      "pattern": "gu + e, i",
+      "phonetic": "/ɡ/",
+      "word": "guitarra",
+      "word_phonetic": "/ɡiˈtara/",
+      "focus": "gu"
+    },
+    {
+      "card_id": "es-c07-06-pinguino",
+      "pattern": "gü + e, i",
+      "phonetic": "/ɡw/",
+      "word": "pingüino",
+      "word_phonetic": "/pinˈɡwino/",
+      "focus": "gü"
+    },
+    {
+      "card_id": "es-c07-07-verguenza",
+      "pattern": "gü + e, i",
+      "phonetic": "/ɡw/",
+      "word": "vergüenza",
+      "word_phonetic": "/beɾˈɡwensa/",
+      "focus": "gü"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Instituto Cervantes",
+      "title": "Plan curricular: Pronunciación y prosodia, inventario A1-A2",
+      "url": "https://cvc.cervantes.es/ensenanza/biblioteca_Ele/plan_curricular/niveles/03_pronunciacion_inventario_a1-a2.htm",
+      "supports": [
+        "Spanish phoneme inventory",
+        "sound-spelling relationships",
+        "connected speech"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española and ASALE",
+      "title": "Diccionario panhispánico de dudas: u",
+      "url": "https://www.rae.es/dpd/u",
+      "supports": [
+        "silent u in que/qui and gue/gui",
+        "pronounced ü in güe/güi"
+      ]
+    },
+    {
+      "publisher": "Real Academia Española",
+      "title": "Ortografía básica de la lengua española",
+      "url": "https://www.rae.es/diccionario-estudiante/docs/ortografia.pdf",
+      "supports": [
+        "orthographic rules",
+        "written stress"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

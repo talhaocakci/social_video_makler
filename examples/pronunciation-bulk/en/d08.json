@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-d08",
+  "module_code": "EN-D08",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-d08-01-knee",
+      "pattern": "kn",
+      "phonetic": "/n/",
+      "word": "knee",
+      "word_phonetic": "/niː/",
+      "focus": "kn"
+    },
+    {
+      "card_id": "en-d08-02-knife",
+      "pattern": "kn",
+      "phonetic": "/n/",
+      "word": "knife",
+      "word_phonetic": "/naɪf/",
+      "focus": "kn"
+    },
+    {
+      "card_id": "en-d08-03-write",
+      "pattern": "wr",
+      "phonetic": "/ɹ/",
+      "word": "write",
+      "word_phonetic": "/ɹaɪt/",
+      "focus": "wr"
+    },
+    {
+      "card_id": "en-d08-04-wrong",
+      "pattern": "wr",
+      "phonetic": "/ɹ/",
+      "word": "wrong",
+      "word_phonetic": "/ɹɔŋ/",
+      "focus": "wr"
+    },
+    {
+      "card_id": "en-d08-05-lamb",
+      "pattern": "mb",
+      "phonetic": "/m/",
+      "word": "lamb",
+      "word_phonetic": "/læm/",
+      "focus": "mb"
+    },
+    {
+      "card_id": "en-d08-06-climb",
+      "pattern": "mb",
+      "phonetic": "/m/",
+      "word": "climb",
+      "word_phonetic": "/klaɪm/",
+      "focus": "mb"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_type": "pronunciation_module",
+  "asset_id": "pronunciation-en-a1-c06",
+  "module_code": "EN-C06",
+  "version": "000001",
+  "target_language": "en",
+  "locale": "en-US",
+  "variety": "General American English",
+  "cefr": "A1",
+  "guiding_language": null,
+  "repetitions_per_word": 2,
+  "cards": [
+    {
+      "card_id": "en-c06-01-red",
+      "pattern": "r",
+      "phonetic": "/ɹ/",
+      "word": "red",
+      "word_phonetic": "/ɹɛd/",
+      "focus": "r"
+    },
+    {
+      "card_id": "en-c06-02-right",
+      "pattern": "r",
+      "phonetic": "/ɹ/",
+      "word": "right",
+      "word_phonetic": "/ɹaɪt/",
+      "focus": "r"
+    },
+    {
+      "card_id": "en-c06-03-wet",
+      "pattern": "w",
+      "phonetic": "/w/",
+      "word": "wet",
+      "word_phonetic": "/wɛt/",
+      "focus": "w"
+    },
+    {
+      "card_id": "en-c06-04-away",
+      "pattern": "w",
+      "phonetic": "/w/",
+      "word": "away",
+      "word_phonetic": "/əˈweɪ/",
+      "focus": "w"
+    },
+    {
+      "card_id": "en-c06-05-yes",
+      "pattern": "y",
+      "phonetic": "/j/",
+      "word": "yes",
+      "word_phonetic": "/jɛs/",
+      "focus": "y"
+    },
+    {
+      "card_id": "en-c06-06-yellow",
+      "pattern": "y",
+      "phonetic": "/j/",
+      "word": "yellow",
+      "word_phonetic": "/ˈjɛloʊ/",
+      "focus": "y"
+    }
+  ],
+  "source_evidence": [
+    {
+      "publisher": "Standards and Testing Agency, GOV.UK",
+      "title": "Assessment framework for the development of the Year 1 phonics screening check",
+      "url": "https://www.gov.uk/government/publications/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check/assessment-framework-for-the-development-of-the-year-1-phonics-screening-check",
+      "supports": [
+        "grapheme-phoneme correspondences",
+        "common exception words"
+      ]
+    },
+    {
+      "publisher": "Department for Education, GOV.UK",
+      "title": "National curriculum in England: English programmes of study",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study",
+      "supports": [
+        "phonics progression",
+        "spelling alternatives"
+      ]
+    }
+  ],
+  "phonetic_provenance": {
+    "draft_engine": "gruut 2.4.0 local language dictionaries",
+    "editorial_overrides": "scripts/gff_pronunciation_bulk.py:IPA_OVERRIDES",
+    "human_native_review": "required"
+  },
+  "release_state": "local_preview_only"
+}
