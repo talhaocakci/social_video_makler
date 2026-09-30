@@ -2,6 +2,8 @@
 
 ## Accepted sources
 
+- A Reading snapshot with matching existing narration, sentence/word alignment,
+  and current sentence pedagogy; route to [long reading videos](long-reading-videos.md)
 - Canonical Guided Communication JSON with `dialogue_turns`
 - Canonical Scenario JSON with `missions`
 - Vocabulary group JSON with `items`
@@ -16,7 +18,9 @@ the canonical source JSON. If a URL omits a version, resolve the current exact
 version and disclose it before rendering. Never substitute a newer version
 during the same job.
 
-The MVP compiler directly supports Guided Communication JSON. Scenario,
+The `gff_media.py` compiler directly supports Guided Communication JSON. The
+reading-teacher mode has its own storyboard/template route; do not pass a
+Reading to the dialogue adapter. Scenario,
 vocabulary, and chain inputs should be resolved to a local bundle before calling
 the compiler; if that adapter is not yet present, report the missing adapter
 instead of fabricating content.

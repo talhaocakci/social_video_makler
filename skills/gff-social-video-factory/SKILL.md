@@ -1,6 +1,6 @@
 ---
 name: gff-social-video-factory
-description: Compile a GetFluentFast LearningChain, Guided Communication, Scenario, or vocabulary export into branded preview videos and optionally ingest explicitly selected artifacts into the GFF S3 feed. Use for a Reel, Short, Story, dialogue video, social pack, thumbnail, render preview, or internal feed upload. Social-platform publication remains a separate approval-gated action.
+description: Create branded GetFluentFast short videos and long reading lessons from existing content, audio, and pedagogy. Defaults to natural audio-first reading lessons with brief spoken vocabulary/grammar explanations and two complete listens. Also supports the three experimental reading formats, dialogue videos, social packs, and explicitly requested internal feed ingestion. Social-platform publication remains a separate approval-gated action.
 ---
 
 # GFF Social Video Factory
@@ -53,7 +53,30 @@ Before editing or rendering:
 Read [publishing boundary](references/publishing-boundary.md) only when the user
 mentions uploading, scheduling, or publishing.
 
-## Workflow
+## Long-video mode: reading teacher
+
+For a long reading video, natural teacher commentary, or a request for the
+three reading formats, read [long reading videos](references/long-reading-videos.md).
+Use family `reading-teacher`. Default to one warm `paper` lesson: a complete
+first listen 10–15% slower, with brief spoken meanings and selected grammar
+between relevant sentences, followed by a complete regular-speed listen
+without explanations. Favor useful words, verbs and phrases; make the teaching
+understandable through headphones. Hide level, chapter and pass markers.
+Add the phone/app demonstration and QR promotion described in the reference:
+a spoken invitation after an eligible explained word, no earlier than sentence
+3, then silent ads after word explanations at least six minutes apart. Use
+actual app screenshots/flows in the lesson’s guiding language.
+Save the complete ordered, localizable video script before generating audio.
+The detailed reference defines this current default and the source-specific
+Elternabend adapters. **Pause & notice**, **Story first**, and **Think & answer**
+remain available as experimental alternatives when requested.
+
+This mode uses the registered `reading-coach` template and source-bound
+storyboards instead of the dialogue-only `gff_media.py` compiler. Default to
+1920x1080 at 30 FPS for this mode. If the user requests the three variants,
+produce all three; do not apply the one-vertical-preview default below.
+
+## Workflow: short and dialogue videos
 
 1. Resolve an exact source asset and version. Prefer immutable exports. Never
    silently switch to a later version.

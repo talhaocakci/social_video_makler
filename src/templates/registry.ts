@@ -38,8 +38,14 @@ import { donutBreakdownDef } from "./donut-breakdown";
 import { donutChartDef } from "./donut-chart";
 import { photoStackDef } from "./photo-stack";
 import { pronunciationCardDef } from "./pronunciation-card";
+import { readingCoachDef } from "./reading-coach";
+import { contentLessonDef } from "./content-lesson";
+import { highlightShortDef } from "./highlight-short";
 
 const TEMPLATE_DEFINITIONS: TemplateDef[] = [
+  readingCoachDef,
+  contentLessonDef,
+  highlightShortDef,
   pronunciationCardDef,
   chatBubblesDef,
   quoteCardDef,

@@ -21,3 +21,10 @@ public/projects/
 
 # update-check cache, per checkout
 .overlay-motion/
+
+# Generated reading lesson preview media.
+/public/reading-teacher-*/
+
+# Python bytecode.
+__pycache__/
+*.pyc

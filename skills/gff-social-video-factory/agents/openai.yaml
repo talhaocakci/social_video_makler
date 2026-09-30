@@ -1,4 +1,4 @@
 interface:
   display_name: "GFF Social Video Factory"
-  short_description: "Turn GFF content into preview-ready social videos"
-  default_prompt: "Use $gff-social-video-factory to render a preview social video from this GFF content source."
+  short_description: "Create GFF short videos and guided reading lessons"
+  default_prompt: "Use $gff-social-video-factory to create a local video preview from this GFF source, using the requested short-video or reading-teacher format."

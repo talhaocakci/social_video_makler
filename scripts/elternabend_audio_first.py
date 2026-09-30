@@ -1,0 +1,32 @@
+"""Native anchor → explicit English meaning → brief contextual teaching, for listening alone."""
+from elternabend_radio import beat
+PAIRS={
+2:[('Überblick.','An overview: a summary of the main points. Here, the teacher introduces what the meeting will cover.')],
+4:[('Vorstellen.','To introduce or present something. Here, the teacher presents the classroom work. This verb separates in a main clause: the main verb comes second, and the prefix comes at the end.')],
+13:[('Betreuung.','Care or supervision. Here, someone looks after the children.'),('Hort.','After-school care for schoolchildren. Here, parents need a care contract to use it. This is care outside lesson hours, rather than preschool kindergarten. The noun is masculine, and the phrase in the reading uses the dative.')],
+14:[('Einen Termin vereinbaren.','To arrange an appointment. That’s how you can discuss anything that still needs sorting out.'),('Zuständig.','Responsible for a particular matter. Here, it identifies the staff member who can help with the care arrangement. To name the responsibility, use für with the accusative.')],
+15:[('Abholen.','To pick someone up, or collect them. Here, someone picks the children up from school.'),('Müssen abgeholt werden.','Must be picked up. The children receive the action, so this is passive. The modal verb comes early; the past participle, abgeholt, and werden come at the end.')],
+16:[('Einhalten.','To keep to something, such as an agreed time.'),('Damit.','So that. It introduces the purpose: keeping to the collection time lets the staff reach their groups on time. This purpose clause has its own subject, and the finite modal verb comes last.')],
+23:[('Falls.','If: it introduces a possible condition.'),('Falls noch etwas fehlt.','If anything is still missing. This is a conditional statement, rather than a question. The finite verb comes at the end of the subordinate clause.')],
+28:[('Nachhilfe.','Extra tutoring to help with learning difficulties. Here, the teacher distinguishes it from homework supervision: supervision offers working time and help, but does not promise systematic extra teaching.')],
+35:[('Lernstand.','Current learning level.'),('Die zum jeweiligen Lernstand passen.','Which fit the respective learning level. This relative clause describes the tasks. Its pronoun refers to the plural tasks, and its verb comes last.')],
+53:[('Aufgreifen.','To take up a topic, or return to it. Here, the teacher revisits some learning foundations. With a modal verb, this full infinitive stays together at the end.')],
+60:[('Gelegentlich.','Occasionally, or from time to time. Here, children sometimes continue tasks at home. The word does not promise a fixed weekly schedule.')],
+61:[('Erledigen.','To complete something, or get it done.'),('Was zu erledigen ist.','What has to be done. Here, sein plus zu and the infinitive expresses necessity: the teacher marks the required work.')],
+69:[('Mit Hausaufgaben überschütten.','To overwhelm someone with homework: literally, to shower them with it. Here, the teacher wants to avoid excessive homework. The person takes the accusative; the excessive thing follows mit with the dative.')],
+71:[('Rückmeldung.','Feedback: letting the teacher know how things are going.'),('Anpassen.','To adjust something to fit the need. Here, feedback helps the teacher adjust the tasks.'),('Anzupassen.','To adjust, in a zu-infinitive. With this separable verb, zu goes inside the word, between the prefix and the verb.')],
+87:[('Wer mehr erzählen möchte und kann.','Anyone who wants and is able to tell more. This is a statement describing who gets a chance to speak. The first clause ends with its modal verbs; the main clause then starts with its verb.')],
+95:[('Zuhören.','To listen to someone.'),('Einander.','One another. Here, the children listen to one another, so listening goes both ways. The listening verb takes the dative; the reciprocal word keeps the same form.')],
+99:[('Berücksichtigen.','To take something into account. Here, allergies affect the food decision. The verb takes a direct accusative object, without a preposition.')],
+100:[('Voraussetzung.','A requirement, or necessary condition. Here, a cake cut into portions is helpful, but it is not required.'),('Verteilen.','To distribute, or hand something out.'),('Das Verteilen.','The activity of distributing: here, handing out the cake. With the article, the infinitive becomes a neuter noun, written with a capital letter.')],
+105:[('Unterschrift.','A signature.'),('Mitteilung.','A message or notice from the school.'),('Bestätigen.','To confirm something as true. Here, the signature confirms that the message has been read. It does not automatically mean agreement. The following clause tells us exactly what is confirmed.')],
+112:[('Ausreichen.','To be enough, or be sufficient. Here, writing only to the teacher is not enough for the absence notification. In the main clause, the verb separates and its prefix comes at the end.')],
+113:[('Eine schriftliche Entschuldigung.','A written absence note. Here, the familiar apology word means a document explaining a child’s absence. The adjective means written, which makes the document meaning clear.')],
+114:[('Rechtzeitig.','In good time: early enough for the school to arrange things.'),('Beurlaubung.','Permission to miss school for a limited period. Here, parents request it in advance. That is different from reporting that a child is ill.')],
+115:[('Vorübergehend.','Temporarily: for a limited time. Here, the teacher will be away on a school trip. The word itself does not give an exact end date.')],
+118:[('Bezugsperson.','A familiar, trusted person a child can rely on for support. Here, that person is the educator who remains with the children. It is a relationship of support, rather than simply an office contact.')],
+123:[('Ausflüge.','Trips or outings. Here, the class goes somewhere together.'),('Klassenkasse.','The class fund: money pooled for shared class expenses. Here, it pays for materials and trips. It does not mean a shop’s cash register.')],
+125:[('Nachvollziehen.','To understand something by following its details. Here, parents can follow how the money is spent and how much remains. It means understandable information, rather than approval of the spending.')],
+}
+def speech(i):
+ return [b for term,explanation in PAIRS[i] for b in (beat(term,'German',.12),beat(explanation,pause=.2))]
