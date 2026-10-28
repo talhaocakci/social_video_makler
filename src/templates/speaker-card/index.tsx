@@ -23,7 +23,11 @@ const schema = z.object({
       "Portrait photo, rounded square left of the text. Omit it and the card drops the portrait and shrinks to the name instead of leaving a gap.",
     ),
   /** Smaller layout for square lower thirds and dense multi-overlay scenes. */
-  variant: z.enum(["standard", "compact"]).default("standard"),
+  variant: z.enum(["standard", "compact", "cutout"]).default("standard"),
+  /** A two-cell transparent atlas: left cell looks right; right cell looks left. */
+  portraitCell: z.enum(["full", "left", "right"]).default("full"),
+  active: z.boolean().default(true),
+  fadeSec: z.number().min(0.1).max(0.6).default(0.24),
   /**
    * How the card leaves: "blur-out" melts it into the background with a blur,
    * "fade-down" just fades. Defaults to the spec's `overlay.exit` hint, then
@@ -73,6 +77,34 @@ const SpeakerCard = (raw: Record<string, unknown>) => {
         })
       : 0;
   const opacity = exitStyle === "blur-out" ? 1 - exitT : exit;
+
+  if (p.variant === "cutout") {
+    const duration = timing.durationFrames ?? durationInFrames;
+    const ramp = Math.min(Math.round(p.fadeSec * fps), Math.floor(duration / 3));
+    const smooth = (value: number) => {
+      const t = Math.max(0, Math.min(1, value));
+      return t * t * (3 - 2 * t);
+    };
+    const envelope = smooth(frame / Math.max(1, ramp)) *
+      smooth((duration - 1 - frame) / Math.max(1, ramp));
+    return (
+      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column",
+        alignItems: "center", justifyContent: "flex-end", opacity: envelope * (p.active ? 1 : 0.4),
+        transform: `translateY(${rem(5) * (1 - envelope)}px)`, fontFamily: brand.fonts.body }}>
+        {p.photo ? <div style={{ width: "100%", aspectRatio: "3 / 4", position: "relative", overflow: "hidden",
+          maskImage: "linear-gradient(to bottom, #000 0%, #000 82%, transparent 100%)" }}>
+          <Img src={resolveAsset(p.photo)} style={{ position: "absolute", top: 0,
+            left: p.portraitCell === "right" ? "-100%" : 0,
+            width: p.portraitCell === "full" ? "100%" : "200%", height: "100%",
+            objectFit: "contain" }} />
+        </div> : null}
+        <div style={{ marginTop: rem(-10), padding: `${rem(8)}px ${rem(24)}px`, borderRadius: rem(999),
+          color: p.active ? brand.colors.onPrimary : brand.colors.onSurface,
+          background: p.active ? brand.colors.primary : "rgba(255,255,255,.07)",
+          fontSize: rem(30), fontWeight: 650 }}>{p.name}</div>
+      </div>
+    );
+  }
 
   return (
     <div

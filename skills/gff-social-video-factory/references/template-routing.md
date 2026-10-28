@@ -5,7 +5,7 @@ Choose the smallest format that expresses the learning interaction.
 | Source and intent | GFF family | Motion building blocks |
 | --- | --- | --- |
 | Guided Communication preview | `dialogue-pop` | `hero-title`, `chat-bubbles` |
-| Simplified Guided Communication with per-turn audio timestamps | `spoken-dialogue` | `hero-title`, `quote-card` |
+| Simplified Guided Communication with per-turn audio timestamps | `spoken-dialogue` | `hero-title`, `quote-card` (`dialogue`), `speaker-card` (`cutout`), `topic-scene` |
 | Listen-and-repeat with aligned audio | `shadowing` | `speaker-card`, `caption-classic`, progress |
 | Scenario challenge | `scenario-pov` | `hero-title`, `prompt-box`, `countdown` |
 | Vocabulary recall | `vocab-flash` | `hero-title`, cards, `countdown` |
@@ -26,3 +26,7 @@ ratio.
 
 Keep the hook under three seconds. Target one meaningful learner action per
 short video. Avoid stacking decorative effects that compete with dialogue.
+
+For conversational Stories and dialogue videos, read [visual dialogue](visual-dialogue.md).
+Use transparent candid speaker cutouts facing inward, source-turn fades and
+small topic-related motion unless the user requests another visual direction.

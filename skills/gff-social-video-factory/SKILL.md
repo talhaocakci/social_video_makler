@@ -102,6 +102,27 @@ For the first render of a new source, default to one 1080x1920 vertical preview.
 Generate a larger social pack only when requested or after the user approves the
 visual direction.
 
+## Visual dialogue: people and meaningful movement
+
+For dialogue Stories and conversation videos, use warm, candid, realistic
+fictional speaker cutouts facing each other, gentle fades on speaker changes,
+and restrained motion tied to the actual topic. Keep the same cast across
+related Stories, guiding-language variants and their long compilation.
+Read [visual dialogue](references/visual-dialogue.md) for transparent assets,
+left/right gaze, source-timed transitions, registered templates and checks.
+Honor an explicit text-only or different visual direction instead.
+
+## Dialogue voices: match the performance
+
+Cast dialogue voices as a pair with comparable conversational energy. Both
+people should sound present, interested and willing to reply, with compatible
+pace, emphasis and emotional intensity. A lively voice beside a tired, flat or
+reluctant voice fails this treatment. Different timbres remain distinct.
+Adult vocal identity must remain adult as engagement increases: use rhythm,
+stress and responsive timing without turning the voice small or childlike.
+Read [dialogue delivery](references/dialogue-delivery.md) before reusing or
+generating dialogue audio; matching volume alone does not satisfy this check.
+
 ## Content invariants
 
 - Bind outputs to source asset ID, exact version, and content checksum.

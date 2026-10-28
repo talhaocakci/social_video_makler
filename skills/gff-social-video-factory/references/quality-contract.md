@@ -19,3 +19,19 @@ Before delivery, verify:
 
 For a new visual family, inspect at least an early, middle, and late frame before
 accepting the full render.
+
+For visual dialogue, also inspect inward gaze, transparent edges on the actual
+background, stable cast across clips, both sides of speaker handoffs, the longest
+sentence and the timing/evidence of topic cues. See [visual dialogue](visual-dialogue.md).
+
+## Paired dialogue delivery
+
+Check adjacent exchanges as a pair, including questions, acknowledgments and
+longer replies. Require compatible engagement and emotional intensity across
+both voices; reject an animated person paired with an unintentionally weary or
+reluctant partner. Record the delivery profile and any replacement reason.
+Adult vocal body and perceived age must remain stable in more expressive
+phrases. Reject childlike drift even when the two speakers match in volume or
+energy; do not claim maturity from a low pitch or an adult persona description.
+Audio level, ASR and source synchronization checks remain separate from perceived
+energy and naturalness. See [dialogue delivery](dialogue-delivery.md).

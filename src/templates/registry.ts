@@ -41,8 +41,10 @@ import { pronunciationCardDef } from "./pronunciation-card";
 import { readingCoachDef } from "./reading-coach";
 import { contentLessonDef } from "./content-lesson";
 import { highlightShortDef } from "./highlight-short";
+import { topicSceneDef } from "./topic-scene";
 
 const TEMPLATE_DEFINITIONS: TemplateDef[] = [
+  topicSceneDef,
   readingCoachDef,
   contentLessonDef,
   highlightShortDef,

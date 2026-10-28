@@ -1,5 +1,6 @@
 /** Lightweight catalog metadata safe to import from routing and shell code. */
 export const TEMPLATE_SLUGS = [
+  "topic-scene",
   "reading-coach",
   "content-lesson",
   "highlight-short",

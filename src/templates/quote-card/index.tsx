@@ -29,7 +29,7 @@ const schema = z.object({
   author: z.string(),
   role: z.string().optional(),
   /** Smaller typography and spacing for corner placement. */
-  variant: z.enum(["standard", "compact"]).default("standard"),
+  variant: z.enum(["standard", "compact", "dialogue"]).default("standard"),
   /**
    * How the quote lands. "lines" preserves the original wrapped-line rise;
    * "words" drops each word into place, "typewriter" reveals characters,
@@ -117,10 +117,11 @@ const QuoteCard = (raw: Record<string, unknown>) => {
   const { fps } = useVideoConfig();
   const { frame, exit } = useInOut();
   const compact = p.variant === "compact";
+  const dialogue = p.variant === "dialogue";
   const rem = compact ? shortEdgeRem : widthRem;
 
   const words = useMemo(() => p.quote.split(" "), [p.quote]);
-  const quoteFontSize = rem(compact ? 36 : 58);
+  const quoteFontSize = rem(compact ? 36 : dialogue ? 52 : 58);
   const measureRef = useRef<HTMLDivElement>(null);
   const [lines, setLines] = useState<string[] | null>(null);
   const delayHandle = useRef<number | null>(null);
@@ -266,11 +267,11 @@ const QuoteCard = (raw: Record<string, unknown>) => {
         maxWidth: rem(compact ? 600 : 880),
         ...surfaceStyle(brand, rem),
         borderRadius: rem(brand.radius),
-        padding: rem(compact ? 48 : 64),
+        padding: rem(dialogue ? 36 : compact ? 48 : 64),
         opacity: exit,
       }}
     >
-      {p.markSvg ? (
+      {dialogue ? null : p.markSvg ? (
         <div
           className="qc-mark"
           style={{
@@ -423,7 +424,7 @@ const QuoteCard = (raw: Record<string, unknown>) => {
           display: "flex",
           alignItems: "center",
           gap: rem(compact ? 12 : 18),
-          marginTop: rem(compact ? 24 : 44),
+          marginTop: rem(dialogue ? 22 : compact ? 24 : 44),
           opacity: authorIn,
           transform: `translateY(${(1 - authorIn) * rem(10)}px)`,
         }}
